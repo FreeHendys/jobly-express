@@ -1,0 +1,49 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "default": {},
+    "description": "Get request Schema with Filters",
+    "examples": [
+        {
+            "nameLike": "Arnold",
+            "minEmployees": "55",
+            "maxEmployees": "950"
+        }
+    ],
+    "required": [],
+    "title": "GET Company request Schema with Filters",
+    "type": "object",
+    "properties": {
+        "nameLike": {
+            "$id": "#/properties/nameLike",
+            "type": "string",
+            "title": "The nameLike schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Arnold"
+            ]
+        },
+        "minEmployees": {
+            "$id": "#/properties/minEmployees",
+            "type": "string",
+            "title": "The minEmployees schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "55"
+            ]
+        },
+        "maxEmployees": {
+            "$id": "#/properties/maxEmployees",
+            "type": "string",
+            "title": "The maxEmployees schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "950"
+            ]
+        }
+    },
+    "additionalProperties": false
+}
